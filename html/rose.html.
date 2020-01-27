@@ -10,6 +10,6 @@
 
   </head>
   <body>
-    <script src="../java/rose.js"></script>
+    <script src="./java/rose.js"></script>
   </body>
 </html>
