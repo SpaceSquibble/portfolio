@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+<body class="whiteBackground">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- the home button -->
+  <div><a href="index.html" class="button">Home</a></div> 
+  <!-- logo -->  
+  <div style="position:absolute;float:right;"><img alt="Study Buny" height="60" width="60" src="https://cdn.glitch.com/9e79dc37-7310-4e61-a25a-ebd17073c3c6%2FUntitled156_20191210220750.png?v=1576040172222"></div>
+  
+  <div class="pageTitle blue2">Calculator </div>
+  <br>
+
+  <form name="calculator">
+     <table class="calculatorBackground">
+        <tr>
+           <td colspan="4">
+              <input type="text" class="calculatorStyle blue1 whiteBackground" name="display" id="display" disabled>
+
+           </td>
+        </tr>
+        <tr>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+              <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="div" value="÷" onclick="calculator.display.value += '/'"></td>
+       </tr>
+       <tr>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+       </tr>
+       <tr>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+              <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+       </tr>
+       <tr>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+              <td><input type="button" class="calculatorStyle blue1 whiteBackground" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+              <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+              <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+        </tr>
+        <tr>
+             <td></td>
+             <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="openBracket" value="(" onclick="calculator.display.value += '('"></td>
+             <td><input type="button" class="operator calculatorStyle blue1 whiteBackground" name="closeBracket" value=")" onclick="calculator.display.value += ')'"></td>
+             <td></td>
+        </tr>
+     </table>
+  </form>
+  <p>
+    &nspb;
+  </p>
+<div class="footer-fix">
+ Coded in Glitch<sup>TM</sup> &copy; 2019
+</div>
+</body>
+  
+<!--calling the style file -->
+<style></style>
+
+</html>
