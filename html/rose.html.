@@ -8,6 +8,6 @@
 
   </head>
   <body>
-    <script src="rose.js"></script>
+    <script src="../java/rose.js"></script>
   </body>
 </html>
