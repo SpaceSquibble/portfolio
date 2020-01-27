@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+<script>
+
+  function outNotes(){
+    var e = document.getElementById('Subjects');
+    var elSelected = e.options[e.selectedIndex].value;
+    var notesOut = notesDate() + "<br>" + document.getElementById('notesin').value;
+    var prevNotes=document.getElementById('display'+elSelected).innerHTML;
+    document.getElementById('display'+elSelected).innerHTML = prevNotes + "<br>"+ notesOut;
+    
+    
+    //document.getElementById('disp').style.display= "block";
+  }
+
+  function notesDate (){
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    return today = mm + '/' + dd + '/' + yyyy;
+  }
+  
+  function setSelectedValue(e) {
+    document.getElementById('notesin').value = "";
+    var str = e.options[e.selectedIndex].value;
+    console.log(str);
+    var option = str;//e.selectedIndex;
+    displaySubjectNotes(option);
+    for (var i = 0; i < e.length-1; i++) {
+      if(i == option || option == 0){
+        document.getElementById('disp'+i).style.display= "block";    
+      }
+      else{
+        document.getElementById('disp'+i).style.display= "none";
+      }
+    }
+   
+  }
+    function displaySubjectNotes(option){
+      if(option==0)
+        {
+          document.getElementById('disp0').style.display= "block";
+          document.getElementById('newNote').style.display= "none";
+        }
+      else{
+          document.getElementById('disp0').style.display= "none";
+          document.getElementById('newNote').style.display= "block";
+      }
+      
+    }
+  
+</script>
+     
+  </head>
+
+<body class="whiteBackground">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!--
+<div class="header-fix">
+                      
+   <span><img alt="Study Bunny" height="60" width="60" src="https://cdn.glitch.com/9e79dc37-7310-4e61-a25a-ebd17073c3c6%2FUntitled156_20191210220750.png?v=1576040172222"></span>
+    <span class="pageTitle blue2" style="height: 60px;">Notebook</span>                    
+   <a href="index.html" class="button">Home</a>
+</div>
+-->
+  
+  <div><a href="index.html" class="button">Home</a></div>
+  <div><img alt="Study Bunny" height="60" width="60" src="https://cdn.glitch.com/9e79dc37-7310-4e61-a25a-ebd17073c3c6%2FUntitled156_20191210220750.png?v=1576040172222"></div>
+  <div class="pageTitle blue2" style="height: 60px;">Notebook</div>                    
+   
+
+<div class="container">
+  <div class="blackText">
+    <p>
+      Here, you may add notes from any of your classes, this way everything will be in one place and not in notebooks scattered around your life.</p>
+  </div>
+  <div>
+  
+  <form action="StudentNotes" method="get">
+    <h3 class="blackText" >Now add to your notes...</h3>
+    <p class="blackText">
+      Please select your Subject:
+    </p>
+  
+    <select style="width:200px;background-color: #55c8fa;" id="Subjects" name="Subjects" onchange="setSelectedValue(this);" >
+    <option value="-1" selected disabled>Please Select</option>
+      <option value="0">All</option>
+      <option value="1">Math</option>
+      <option value="2">Computer Science</option>
+      <option value="3">English</option>
+      <option value="4">French</option>
+      <option value="5">World Issues</option>
+      <option value="6">History</option>
+      <option value="7">Physics</option>
+      <option value="8">Chemistry</option>
+      <option value="9">Biology</option>
+    </select>
+  
+    <div id="newNote" style="display:none" class="blackText">
+      <p>
+        Enter your notes below and click 'Add Notes'.
+      </p>
+      <textarea rows="3" cols="30" id="notesin" style="width:200px;" ></textarea><br>
+      <input id="btnNotes" type="button" value="Add Notes" class="button"/><br>
+    </div>
+    
+    <div id="disp0" style="display:none" class="blackText">
+      <h3>Notes</h3>
+    </div>
+    
+    <div id="disp1" style="display:none" class="blackText">
+     <h3>Math</h3><div id="displayM" style="align: left; " class="subjectnote">
+      <p id="display1"></p>
+      </div>
+   </div>
+    <div id="disp2" style="display:none" class="blackText"> 
+     <h3>Computer Science:</h3>
+      <div id="displayCS" style="align: left; " class="subjectnote">
+      <p id="display2"></p>
+      </div>
+   </div>
+    <div id="disp3" style="display:none" class="blackText">
+     <h3>English:</h3>
+      <div id="displayE" style="align: left; " class="subjectnote">
+      <p id="display3"></p>
+      </div>
+   </div>
+    <div id="disp4" style="display:none" class="blackText">
+     <h3>French:</h3>
+      <div id="displayF" style="align: left; " class="subjectnote">
+      <p id="display4"></p>
+      </div>
+   </div>
+    <div id="disp5" style="display:none" class="blackText">
+     <h3>World Issues:</h3>
+      <div id="displayWI" style="align: left; " class="subjectnote">
+      <p id="display5"></p>
+      </div>
+   </div>
+    <div id="disp6" style="display:none" class="blackText">
+     <h3>History:</h3>
+      <div id="displayH" style="align: left; " class="subjectnote">
+      <p id="display6"></p>
+      </div>
+   </div>
+    <div id="disp7" style="display:none" class="blackText">
+     <h3>Physics:</h3>
+      <div id="displayP" style="align: left; " class="subjectnote">
+      <p id="display7"></p>
+      </div>
+   </div>
+    <div id="disp8" style="display:none" class="blackText">
+     <h3>Chemistry:</h3>
+      <div id="displayC" style="align: left; " class="subjectnote">
+      <p id="display8"></p>
+      </div>
+   </div>
+    <div id="disp9" style="display:none" class="blackText">
+     <h3>Biology:</h3>
+      <div id="displayB" style="align: left; " class="subjectnote">
+      <p id="display9"></p>
+      </div>
+   </div>
+  </form>
+  </div>
+  </div>
+<div class="footer-fix">
+ Coded in Glitch<sup>TM</sup> &copy; 2019
+</div>
+<script>
+  var out= document.getElementById("btnNotes");
+  out.addEventListener("click", outNotes, false);
+</script>
+      
+</body>
+
+</html>
