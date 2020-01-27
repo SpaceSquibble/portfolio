@@ -68,7 +68,7 @@ Heart.prototype.lines = function() {
 }
 
 function setup() {
-  createCanvas(1600, 800);
+  createCanvas(400, 400);
   r = height /8 - 16;
 }
 
