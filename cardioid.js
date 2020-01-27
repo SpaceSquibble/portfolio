@@ -27,7 +27,7 @@ Heart.prototype.calculateWallForce = function() {
     var i=0;
     var j=0;
     
-    if (this.position.x> width) 
+    if (this.position.x > width) 
     {
         i = -1;
     } 
