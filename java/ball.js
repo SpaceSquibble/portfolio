@@ -2,6 +2,8 @@ new p5();
 
 function setup(){
   createCanvas(400,400);
+  
+  var answer = floor(random(1, 5));
 }
 
 function draw(){
@@ -12,8 +14,6 @@ function draw(){
   triangle(200, 104, 280, 280, 120, 280);
 
   fill(255, 255, 255);
-
-  var answer = floor(random(1, 5));
 
   if (answer === 1) 
   {
