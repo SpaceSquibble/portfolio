@@ -26,7 +26,8 @@ Tile.prototype.draw = function() {
     if (this.isFaceUp) {
         image(this.face, this.x, this.y, this.width, this.width);
     } else {
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), this.x+10, this.y-5, this.width-20, this.width);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , this.x+10, this.y-5, this.width-20, this.width);
     }
 };
 
@@ -51,15 +52,24 @@ var faces = [
     getImage("avatars/mr-pink"),
     getImage("avatars/old-spice-man"),
     getImage("avatars/robot_female_1") */
-  ![face-1](https://user-images.githubusercontent.com/54996465/73232250-a9317000-4150-11ea-879f-00db57ebd443.png),
-  ![face-2](https://user-images.githubusercontent.com/54996465/73232251-a9317000-4150-11ea-97ad-8e264c2f9312.png),
-  ![face-3](https://user-images.githubusercontent.com/54996465/73232252-a9317000-4150-11ea-9e46-c3deee30d85d.png),
-  ![face-4](https://user-images.githubusercontent.com/54996465/73232253-a9317000-4150-11ea-99e4-33328997f39c.png),
-  ![face-5](https://user-images.githubusercontent.com/54996465/73232254-a9317000-4150-11ea-98da-6b95b87839e9.png),
-  ![face-6](https://user-images.githubusercontent.com/54996465/73232255-a9317000-4150-11ea-8af8-0229a3c90c4a.png),
-  ![face-7](https://user-images.githubusercontent.com/54996465/73232256-a9317000-4150-11ea-828d-49f3b568ee32.png),
-  ![face-8](https://user-images.githubusercontent.com/54996465/73232258-a9ca0680-4150-11ea-80c6-3fd417b3781e.png),
-  ![face-9](https://user-images.githubusercontent.com/54996465/73232259-a9ca0680-4150-11ea-9cc5-9ed24539e1a2.png),
+  ![face-1](https://user-images.githubusercontent.com/54996465/73232250-a9317000-4150-11ea-879f-00db57ebd443.png)
+            ,
+  ![face-2](https://user-images.githubusercontent.com/54996465/73232251-a9317000-4150-11ea-97ad-8e264c2f9312.png)
+            ,
+  ![face-3](https://user-images.githubusercontent.com/54996465/73232252-a9317000-4150-11ea-9e46-c3deee30d85d.png)
+            ,
+  ![face-4](https://user-images.githubusercontent.com/54996465/73232253-a9317000-4150-11ea-99e4-33328997f39c.png)
+            ,
+  ![face-5](https://user-images.githubusercontent.com/54996465/73232254-a9317000-4150-11ea-98da-6b95b87839e9.png)
+            ,
+  ![face-6](https://user-images.githubusercontent.com/54996465/73232255-a9317000-4150-11ea-8af8-0229a3c90c4a.png)
+            ,
+  ![face-7](https://user-images.githubusercontent.com/54996465/73232256-a9317000-4150-11ea-828d-49f3b568ee32.png)
+            ,
+  ![face-8](https://user-images.githubusercontent.com/54996465/73232258-a9ca0680-4150-11ea-80c6-3fd417b3781e.png)
+            ,
+  ![face-9](https://user-images.githubusercontent.com/54996465/73232259-a9ca0680-4150-11ea-9cc5-9ed24539e1a2.png)
+            ,
   ![face-10](https://user-images.githubusercontent.com/54996465/73232260-a9ca0680-4150-11ea-90a0-89ce6bf6da94.png)
 ];
 
@@ -166,21 +176,33 @@ draw = function() {
     if (numMatches === tiles.length/2) {
         background(45, 40, 84);
         
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png) , 22, -42, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 127, -103, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 210, 3, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 309, -83, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), -49, 78, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 367, 67, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 289, 194, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 29, 173, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), -18, 281, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 165, 257, 90, 144);
-        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), 307, 318, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 22, -42, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 127, -103, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 210, 3, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 309, -83, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , -49, 78, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 367, 67, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 289, 194, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 29, 173, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , -18, 281, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 165, 257, 90, 144);
+        image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                      , 307, 318, 90, 144);
         
         for(var i = 0; i<30; i++){
             var r = random(15,55);
-            image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png), random(0,400), random(0,400), r, r);
+            image(![star](https://user-images.githubusercontent.com/54996465/73232264-a9ca0680-4150-11ea-8646-7765121c7188.png)
+                          , random(0,400), random(0,400), r, r);
         }
         
         fill(245, 220, 95);
