@@ -12,10 +12,10 @@ function draw(){
     fill(12, 31, 87);
 
     textSize(30);
-    text("Leaf Buddy!", 110, 52);
+    text("Buddy!", 110, 52);
     
     textSize(15);
-    text("Leaf can give you infinite life!!",25,83);
+    text("Buddy can give you infinite life!!",25,83);
     textSize(19);
     text("Makes you younger!!",25,114);
 
@@ -30,7 +30,7 @@ function draw(){
         speed= +4; 
     }
 
-    image(getImage("avatars/duskpin-seedling"),x,135,250,250);
+    image(../images/fall.png, x, 135, 250, 250);
     rect(0,381,400,72);
     rect(0,0,400,16);
 }
