@@ -12,6 +12,10 @@ var k = 0;
 var p1=257;
 var p2=30;
 
+function setup(){
+  createCanvas(400,400);
+}
+
 function draw() {
     noStroke();
     background(29, 40, 115);
