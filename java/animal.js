@@ -7,6 +7,10 @@ var bodyH = bodyW/2;
 var eyeW = 25;
 var eyeH = 25;
 
+function setup(){
+  createCanvas(400,400);
+}
+
 function draw(){
   noStroke();
     background(207, 254, 255);
