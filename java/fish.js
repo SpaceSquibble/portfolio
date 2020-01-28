@@ -1,3 +1,5 @@
+new p5();
+
 function setup() {
   createCanvas(400, 400);
   background(random(93,135), random(211,250), random(221,240)); 
