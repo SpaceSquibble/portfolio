@@ -18,7 +18,8 @@ function draw(){
     {
         for(var p=145;p<370;p+=44)
         {
-            image(getImage("cute/StoneBlockTall"),q,p,70,96);
+            fill(139, 150, 153);
+            rect(q,p,70,96);
         }
     }
 
