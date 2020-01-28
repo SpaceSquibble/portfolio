@@ -3,6 +3,10 @@ new p5();
 var x = 0;
 var speed = 3;
 
+function setup(){
+  createCanvas(400,400);
+}
+
 function draw(){
   background(255, 255, 255);
     fill(12, 31, 87);
