@@ -1,5 +1,9 @@
 new p5();
 
+function setup(){
+  createCanvas(400,400);
+}
+
 function draw(){
 // wooden table
 background(250, 232, 220); 
