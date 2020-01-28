@@ -24,13 +24,13 @@ angleMode = "radians";
 
 //generating planets
     var Attractor = function() {
-    this.position = new PVector(width/2, height/2);
+    this.position = new p5.Vector(width/2, height/2);
     this.mass = 20;
     this.G = 1;
     };
     
     Attractor.prototype.calculateAttraction = function(m) {
-        var force = PVector.sub(this.position, m.position);
+        var force = p5.Vector.sub(this.position, m.position);
         var distance = force.mag();
         distance = constrain(distance, 5, 25);  
         force.normalize();
@@ -49,9 +49,9 @@ angleMode = "radians";
     
     var Mover = function(mass, x, y, color) 
     {
-        this.position = new PVector(x, y);
-        this.velocity = new PVector(1, 0);
-        this.acceleration = new PVector(0, 0);
+        this.position = new p5.Vector(x, y);
+        this.velocity = new p5.Vector(1, 0);
+        this.acceleration = new p5.Vector(0, 0);
         this.mass = mass;
         this.colour= color;
     };
@@ -111,21 +111,21 @@ angleMode = "radians";
     
     Ship.prototype.turnLeft = function() 
     {
-        var left = PVector.get(this.velocity);
+        var left = p5.Vector.get(this.velocity);
         left.rotate(-PI/4);
         this.applyForce(left);
     };
     
     Ship.prototype.turnRight = function() 
     {
-        var right = PVector.get(this.velocity);
+        var right = p5.Vector.get(this.velocity);
         right.rotate(PI/4);
         this.applyForce(right);
     };
     
     Ship.prototype.Thrust = function() 
     {
-        var thrust = PVector.get(this.velocity);
+        var thrust = p5.Vector.get(this.velocity);
         this.acceleration(thrust);
     };
     
