@@ -1,5 +1,9 @@
 new p5();
 
+function setup(){
+  createCanvas(400,400);
+}
+
 function draw(){
   fill(0, 0, 0);
   ellipse(200, 200, 375, 375);
