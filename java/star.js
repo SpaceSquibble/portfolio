@@ -25,10 +25,10 @@ function draw() {
     ellipse(70, 90, 10, 10);
     ellipse(315, 141, 10, 10);
     ellipse(187, 260, 10, 10);
-    image(getImage("cute/Star"), 122, 156, 25,40);
-    image(getImage("cute/Star"), 292, 309, 25,40);
-    image(getImage("cute/Star"), 20, 287, 25,40);
-    image(getImage("cute/Star"), 339, 25, 25,40);
+    ellipse(122, 156, 25,40);
+    ellipse(292, 309, 25,40);
+    ellipse(20, 287, 25,40);
+    ellipse(339, 25, 25,40);
     
     xPos-=2;
     yPos++;
@@ -43,7 +43,7 @@ function draw() {
     //moon  aka pacman
     p1-=3;
     p2++;
-    image(getImage("cute/Star"),p1, p2, 25,40);
+    ellipse(p1, p2, 25,40);
     arc(262,66,50,50,-146,147);
     
     fill(5, 14, 41);
