@@ -1,6 +1,7 @@
 new p5();
 
 function setup(){
+        createCanvas(400, 400);
 }
 /*
         Hello and welcome to my program! :)
