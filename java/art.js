@@ -1,3 +1,5 @@
+new p5();
+
 var drawShape = function(x, y, radius) {
     
     var newRadius = radius/2;
