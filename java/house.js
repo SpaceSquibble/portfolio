@@ -1,5 +1,9 @@
 new p5();
 
+function setup(){
+  createCanvas(400,400);
+}
+
 function draw(){
     background(182, 250, 250);
 
