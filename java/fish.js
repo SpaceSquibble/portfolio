@@ -1,11 +1,14 @@
 new p5();
 
+var n;
+
 function setup() {
   createCanvas(400, 400);
   background(random(93,135), random(211,250), random(221,240)); 
   fill(34, 115, 67);
   textSize(33);
   text("Click to add a fish",60,64);
+  n = 0;
 }
 
 function draw() {
@@ -36,8 +39,11 @@ function draw() {
   };
 
   mouseClicked = function() {
+    n = n % 2;
+    if(n === 0){
       drawFish(mouseX, mouseY, random(7,100), random(7,50));
-
+    }
+    n++;
   };
 
   //textSize(40);
