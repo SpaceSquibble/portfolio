@@ -25,10 +25,10 @@ function draw() {
     ellipse(70, 90, 10, 10);
     ellipse(315, 141, 10, 10);
     ellipse(187, 260, 10, 10);
-    ellipse(122, 156, 25,40);
-    ellipse(292, 309, 25,40);
-    ellipse(20, 287, 25,40);
-    ellipse(339, 25, 25,40);
+    ellipse(122, 156, 15, 15);
+    ellipse(292, 309, 15, 15);
+    ellipse(20, 287, 15, 15);
+    ellipse(339, 25, 15, 15);
     
     xPos-=2;
     yPos++;
@@ -43,8 +43,13 @@ function draw() {
     //moon  aka pacman
     p1-=3;
     p2++;
-    ellipse(p1, p2, 25,40);
+    ellipse(p1, p2, 15, 15);
+  
     arc(262,66,50,50,-146,147);
+    ellipse(300, 50, 50, 50);
+    
+    background(29, 40, 115);
+    ellipse(280, 50, 40, 40);
     
     fill(5, 14, 41);
     
