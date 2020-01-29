@@ -48,9 +48,9 @@ function draw() {
     arc(262,66,50,50,-146,147);
     ellipse(300, 50, 50, 50);
     
-    background(29, 40, 115);
+    fill(29, 40, 115);
     ellipse(280, 50, 40, 40);
-    
+  
     fill(5, 14, 41);
     
     rect(0,375,400,35); //floor
