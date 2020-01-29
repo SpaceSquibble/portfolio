@@ -1,24 +1,25 @@
+new p5();
 //squids move around randomly and appear on the other side when they go off the screen. They eat plankton when they hit them.
 //leeches scream and turn more red when they hit your mouse. they only scream untill their mouth is 13 pixels wide they are attracted to your mouse
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 // Biggest possible PVector that fits in the canvas
-var maxDir = PVector.sub (new PVector (0, 0), new PVector (width-1, height-1));
+var maxDir = p5.Vector.sub (new p5.Vector (0, 0), new PVector (width-1, height-1));
 // Max Magnitude of the vector
 var maxMag =  maxDir.mag();
 
 //Squid Code
 ////////////////////////////////////////////////////////////////////////////////////////////
     var Squid = function() {
-        this.position = new PVector(random(0, 400), random(0, 400)); //x and y position of the creature
-        this.velocity = new PVector(0, 0); //speed and direction of the creature (-ive or +ive)
-        this.acceleration = new PVector(0, 0); //creature's acceleration
+        this.position = new p5.Vector(random(0, 400), random(0, 400)); //x and y position of the creature
+        this.velocity = new p5.Vector(0, 0); //speed and direction of the creature (-ive or +ive)
+        this.acceleration = new p5.Vector(0, 0); //creature's acceleration
     };
     
     //constantly update the creatures' movement
     Squid.prototype.update = function() {
-        var mouse = new PVector(random(-50, 600), random(-50, 600));
-        var dir = PVector.sub(mouse, this.position);
+        var mouse = new p5.Vector(random(-50, 600), random(-50, 600));
+        var dir = p5.Vector.sub(mouse, this.position);
         var closeness = (maxMag-dir.mag())/maxMag;
         
         dir.normalize();
@@ -84,7 +85,7 @@ var maxMag =  maxDir.mag();
 //Plankton
 ////////////////////////////////////////////////////////////////////////////////////////////
 var Plank = function() {
-    this.position = new PVector(random(0,400), random(0,400));
+    this.position = new p5.Vector(random(0,400), random(0,400));
 };
 
 Plank.prototype.draw = function() {
@@ -108,14 +109,14 @@ Plank.prototype.draw = function() {
     var maxMag =  maxDir.mag();
     
     var Leech = function() {
-        this.position = new PVector(random(-70,600), random(-70,600));
-        this.velocity = new PVector(0, 0);
-        this.acceleration = new PVector(0, 0);
+        this.position = new p5.Vector(random(-70,600), random(-70,600));
+        this.velocity = new p5.Vector(0, 0);
+        this.acceleration = new p5.Vector(0, 0);
     };
     
     Leech.prototype.update = function() {
-        var mouse = new PVector(mouseX, mouseY);
-        var dir = PVector.sub(mouse, this.position);
+        var mouse = new p5.Vector(mouseX, mouseY);
+        var dir = p5.Vector.sub(mouse, this.position);
         var closeness = (maxMag-dir.mag())/maxMag;
         
         dir.normalize();
@@ -198,7 +199,7 @@ for(var i= 0; i < 3; i++){
     leeches[i] = new Leech();
 }
 
-draw = function() {
+function draw() {
     background(145, 184, 157); //swampy water colour
     
     //outputting squids
