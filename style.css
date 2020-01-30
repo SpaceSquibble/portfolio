@@ -17,12 +17,12 @@ h2{
 #cover{
   margin-left: 10000;
   border-style: double; 
-  border-width: 3;
+  border-width: 5;
   border-color: white;
 }
 #summary{
-  border-style: double; 
-  border-width: 3;
+  border-style: solid; 
+  border-width: 4;
   border-color: white;
   background-color: white;
 }
