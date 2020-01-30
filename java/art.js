@@ -7,7 +7,7 @@ function draw() {
     var drawShape = function(x, y, radius) {
 
       var newRadius = radius/2;
-      fill(x-12, y/1.5-40, newRadius+90); //filling it with gradients :)
+      fill(x-12, y/1.5-40, newRadius+90, 220); //filling it with gradients :)
       //making a pretty shape
       stroke(148, 0, 96);
       beginShape();
