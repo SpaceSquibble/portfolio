@@ -15,16 +15,18 @@ h2{
   color: white;
 }
 .cover{
-  margin-left: 20px;
+  margin-left: 75px;
   border-style: double; 
   border-width: 5;
   border-color: white;
   width: 400;
   padding: 5;
 }
-#summary{
+.summary{
   border-style: solid; 
   border-width: 4;
   border-color: white;
   background-color: white;
+  float: right;
+  margin-right: 75px;
 }
