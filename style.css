@@ -20,6 +20,8 @@ h2{
   border-style: double; 
   border-width: 5;
   border-color: white;
+  width: 400;
+  padding: 5;
 }
 #summary{
   border-style: solid; 
