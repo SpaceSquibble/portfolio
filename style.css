@@ -15,6 +15,7 @@ h2{
   color: white;
 }
 #cover{
+  position: absolute;
   margin-left: 1000px;
   border-style: double; 
   border-width: 5;
