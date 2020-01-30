@@ -1,7 +1,7 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(#fa8b3c, #ffaa54);
+  margin: 50px;
+  padding: 7px;
+  background: #ffc8a7;
 }
 canvas {
   display: block;
