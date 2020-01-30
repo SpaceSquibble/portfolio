@@ -19,9 +19,6 @@ h2{
   border-style: double; 
   border-width: 5;
   border-color: white;
-  
-  float: left;
-  width: 50%;
 }
 .summary{
   border-style: solid; 
@@ -30,7 +27,7 @@ h2{
   background-color: rgb(0,0,0,220);
   
   float: right;
-  width: 50%;
+  width: 75%;
   margin-right: 75px;
   margin-top: -100;
 }
