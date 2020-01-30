@@ -11,3 +11,15 @@ canvas {
 h1{
  color: rgb(145, 31, 0); 
 }
+#cover{
+  margin-left: 10000;
+  border-style: double; 
+  border-width: 3;
+  border-color: white;
+}
+#summary{
+  border-style: double; 
+  border-width: 3;
+  border-color: white;
+  background-color: white;
+}
