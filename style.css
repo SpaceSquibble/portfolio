@@ -11,6 +11,9 @@ canvas {
 h1{
  color: rgb(145, 31, 0); 
 }
+h2{
+  color: white;
+}
 #cover{
   margin-left: 10000;
   border-style: double; 
