@@ -39,5 +39,6 @@ h2{
   margin-left = 5;
 }
 .dark{
+  font-size: 16;
   colour: rgb(89, 14, 1);
 }
