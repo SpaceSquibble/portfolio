@@ -14,7 +14,7 @@ h1{
 h2{
   color: white;
 }
-#cover{
+.cover{
   float: right;
   margin-right: 10px;
   border-style: double; 
